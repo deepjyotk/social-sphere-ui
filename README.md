@@ -66,18 +66,10 @@ The Social Sphere UI is an Angular-based front-end application that provides an 
 3. Utilize Angular forms for creating and updating content.
 4. Navigate between sections using proper Angular routing.
 
-## Contributing
 
-We welcome contributions to enhance the Social Sphere UI. To contribute, please follow the [Contributing Guidelines](CONTRIBUTING.md).
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For any questions or support, please contact [Your Name](mailto:your@email.com).
+For any questions or support, please contact [Deepjyot Kapoor](mailto:kapoordeepjyotsingh29@gmail.com).
 
 ---
-
-Customize this README file with specific details about your Angular UI project, including the repository link, installation instructions, and contact information. This README provides an overview of the project's features and how to get started with it.
