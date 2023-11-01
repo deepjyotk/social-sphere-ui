@@ -1,4 +1,3 @@
-Certainly! Here's a template for a README file for your .NET Core Web API project with the mentioned features. You can customize it with specific details, installation instructions, and additional information as needed.
 
 # Social Sphere Web API
 
@@ -93,8 +92,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For any questions or support, please contact [Your Name](mailto:your@email.com).
+For any questions or support, please contact [Deepjyot](mailto:kapoordeepjyotsingh29@gmail.com).
 
----
-
-Feel free to replace placeholders with specific details about your project, including the repository link, installation instructions, and contact information. This README file provides an overview of the project's features and how to get started with it.
