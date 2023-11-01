@@ -1,0 +1,42 @@
+mat-card-title,
+  mat-card-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mat-form-field {
+    width: 100%;
+    min-width: 100px;
+  }
+
+  :host {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+  }
+  .red-text{
+    color:  #e91e63 !important;
+  }
+  .button {
+    display: flex;
+    justify-content: flex-end;
+    font-size: xxlarge;
+    color:  #e91e63 !important;;
+    
+  }
+
+  ::ng-deep .mat-form-field-placeholder{
+
+    color:red;
+  }
+  
+  ::ng-deep .mat-focused .mat-form-field-placeholder{
+  
+    color:red;
+  }
+  .validText{
+    color: rgb(214, 9, 9);
+    font-size: 15px;
+    text-align: center;
+  }
+  

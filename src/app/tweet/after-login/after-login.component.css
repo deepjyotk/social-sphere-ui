@@ -1,0 +1,73 @@
+:host {
+    
+    margin: 100px 0px;
+  }
+
+content{
+    
+    
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    align-items:center;
+    vertical-align:middle;
+    margin: auto;
+    width: 60%;
+    padding: 250px;
+ 
+   
+  }
+
+  
+  .product{
+    min-width: 180px;
+    height: 280px;
+    text-align: center;
+    margin-bottom: 20px; /* same as fxLayoutGap for even distribution */
+  }
+  
+  .product img{
+    height: 150px;
+    object-fit: contain;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 50%;
+    float: right;
+    
+  }
+
+  .text{
+      color:black;
+      font-size: 15px;
+      
+  }
+ 
+  .text-right{
+   
+    float: right;
+    color:#ffd740;
+  }
+
+  p {
+    font-family: Lato;
+  }
+
+  /* .basic-container {
+    padding: 5px;
+  } */
+
+  mat-card {
+    width: calc(100% - 70px);
+    height: calc(100% - 70px);
+  }
+
+  .text-upper{
+      font-size: 20px;
+  }
+  
+  
+
+  
+  

@@ -1,0 +1,31 @@
+:host {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+  }
+  .button_add{
+      float: right;
+  }
+  .tweetHead{
+      background-color:  grey;
+      opacity: 0.3;
+
+     
+  }
+
+  .comments{
+      float: right;
+  }
+
+  .userId{
+      color: goldenrod;
+      font-family: 'Times New Roman';
+      font-size: 25px;
+      
+  }
+  .comment{
+      color: black;
+      font-family: 'Times New Roman';
+      font-size: 20px;
+
+  }

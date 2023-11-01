@@ -1,0 +1,24 @@
+<mat-card >
+    <mat-card-title class="red-text">AddTweet</mat-card-title>
+<mat-card-content>
+<form [formGroup]="form"  class="loginBackground" (ngSubmit)="onSubmit()">
+
+  <p>
+    <mat-form-field class="icon">
+
+      <input type="text" matInput placeholder="Add your Tweet" formControlName="UserTweets" >
+      <mat-error *ngIf="hasError('UserTweets', 'required')">Please enter Tweet</mat-error>
+       <mat-error *ngIf="hasError('UserTweets', 'maxlength')">Tweet should not be exceed 144 characters </mat-error>
+
+    </mat-form-field>
+  </p>
+
+
+
+  <div class="button">
+    <button type="submit" color="primary" class="button"mat-button>AddTweet</button>
+  </div>
+
+</form>
+</mat-card-content>
+</mat-card>

@@ -1,0 +1,49 @@
+img {
+    border-radius: 60%;
+    width: 20%;
+    float: left;
+
+  }
+
+.text{
+    color:  #e91e63!important;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.text_black{
+    color:black!important;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+}
+.text_grey{
+    color:goldenrod;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.button_Comments{
+    float: right;
+}
+.container {
+    font-size: 20px;
+    line-height: 18px;
+    height: 18px;
+    overflow: hidden;
+  }
+  .show {
+    overflow: visible;
+    height: auto;
+  }
+  .text_black_date{
+      float: right;
+      color: black;
+  }
+
+
+  .tweet-card{
+      margin-top: 15px;
+      margin-bottom: 15px;
+
+  }

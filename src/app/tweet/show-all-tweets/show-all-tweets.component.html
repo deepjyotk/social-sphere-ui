@@ -1,0 +1,39 @@
+<div class="search">
+  <mat-form-field class="icon">
+  <input type="text" matInput placeholder="search user" [(ngModel)]="searchText" />
+
+
+</mat-form-field>
+</div>
+
+<div class="content">
+  <div fxLayout="row wrap" fxLayoutGap="16px grid">
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let list of tweetlist| filter: searchText">
+      <mat-card class="mat-elevation-z4" >
+        <mat-card-header>
+          <img mat-card-avatar src="/assets/images/{{list.imgName}}"/>
+          <mat-card-title class="text">{{list.userId}}</mat-card-title>
+          <mat-card-subtitle class="text_grey">@{{list.firstName}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+
+      <p class="text_black container" [class.show]="list.visible">
+        "{{list.userTweets}}"
+      </p>
+      <button mat-button  color ='basic' (click)="list.visible = !list.visible">{{ list.visible ? 'Show less': 'Show More' }}</button>
+      <p class="text_black" >
+        Posted on: {{list.createdDate |date}}
+    </p>
+      <div class="button">
+        <button type="submit" (click)='alertBox()' color="primary" class="view_post_button" mat-button>View Post</button>
+    </div>
+    <br/>
+    </mat-card-content>
+    <mat-card-actions>
+
+    </mat-card-actions>
+  </mat-card>
+
+</div>
+</div>
+</div>

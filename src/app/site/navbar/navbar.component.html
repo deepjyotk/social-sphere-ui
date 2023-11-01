@@ -1,0 +1,36 @@
+<mat-toolbar color="secondary" >
+      <mat-toolbar-row class="nav-row">
+        <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span class="text-icon"><a routerLink="/afterlogin" ><img src="https://user-tweet-staticimages.s3.ap-south-1.amazonaws.com/Let's+Tweet-logos.jpeg" class="logo-img"/></a></span>
+        <span class="menu-spacer"></span>
+        <div fxShow="true" fxHide.lt-md>
+
+          <a routerLink="/login" mat-button *ngIf="!getUser()">Login</a>
+          <a routerLink="/register" mat-button *ngIf="!getUser()">Register</a>
+          <a *ngIf="getUser()" >Hey, {{getUser().firstName}}</a>
+          <a routerLink="/afterlogin" mat-button *ngIf="getUser()">Home</a>
+          <a routerLink="/resetpassword" mat-button *ngIf="getUser()">ResetPassword</a>
+          <a routerLink=" " (click)="onLogout()" mat-button *ngIf="getUser()" >LogOut</a>
+
+        </div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <mat-sidenav-container fxFlexFill>
+      <mat-sidenav #sidenav>
+        <mat-nav-list>
+          <a (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+          <a routerLink="/login" mat-button *ngIf="!getUser()">Login</a>
+          <a routerLink="/register" mat-button *ngIf="!getUser()">RegisterRequestModel</a>
+          <a *ngIf="getUser()" >Hey, {{getUser().firstname}}</a>
+          <a routerLink="/afterlogin" mat-button *ngIf="getUser()">Home</a>
+          <a routerLink="/resetpassword" mat-button *ngIf="getUser()">ResetPassword</a>
+          <a routerLink=" " (click)="onLogout()" mat-button *ngIf="getUser()" >LogOut</a>
+
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content fxFlexFill><router-outlet></router-outlet></mat-sidenav-content>
+    </mat-sidenav-container>
+

@@ -1,0 +1,42 @@
+
+<mat-card >
+    <mat-card-title class="red-text">Login</mat-card-title>
+<mat-card-content>
+<form [formGroup]="form"  class="loginBackground" (ngSubmit)="submit()">
+  <p>
+    <mat-form-field class="icon">
+      <mat-icon matPrefix class="icon">person_outline</mat-icon>
+      <input type="text" matInput placeholder="Email" formControlName="username" color='accent' class="username" autocomplete="off"  >
+
+      <mat-error *ngIf="hasError('username', 'required')">Please inform us your Email</mat-error>
+    </mat-form-field>
+  </p>
+
+  <p>
+    <mat-form-field>
+      <mat-icon matPrefix class="icon">lock_outline</mat-icon>
+      <input matInput placeholder="password" [type]="hide ? 'password' : 'text'" formControlName="password" class="username" autocomplete="off" >
+      <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      <mat-error *ngIf="hasError('password', 'required')">Please inform us your password</mat-error>
+    </mat-form-field>
+
+  </p>
+  <div class="button">
+    <button type="submit"  class="button login-btn"mat-button>Sign In</button>
+  </div>
+  <br/>
+
+  <p><a routerLink="/forgotpassword" class='ftp' mat-button>Forgot password ?</a>
+  <a routerLink="/register" color='accent' class="new_account" mat-button>Create New Account</a></p>
+<p *ngIf="valid" class="validText">INVALID CREDENTIALS</p>
+
+
+</form>
+</mat-card-content>
+</mat-card>
+
+<!-- <app-add-new-tweet [user_details]='userId'></app-add-new-tweet>
+ -->
+
+
+

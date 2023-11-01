@@ -1,0 +1,58 @@
+.angular-logo {
+    margin: 0 4px 3px 0;
+    height: 35px;
+    vertical-align: middle;
+}
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
+.nav-row{
+  height: 63px;
+
+}
+.logo-img{
+
+  width: 65px;
+  height: 62px;
+  border-radius: 50%;
+
+}
+span,button{
+    color: black;
+    font-family: Gill Sans Extrabold, sans-serif;
+    font-size: large;
+
+}
+mat-icon{
+    font-size: xxlarge;
+}
+
+::ng-deep.mat-menu-content {
+    background-color:#ffd740 !important;
+  }
+
+  .menu-spacer {
+    flex: 1 1 auto;
+  }
+
+  ::ng-deep .mat-sidenav-container {
+    height: 10%;
+    min-height: 10%;
+    min-width: 100%;
+    width: 100%;
+}
+
+
+  .text-icon{
+    font-size: 20px;
+  }
+  .title{
+    padding-left: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: white;
+    font-style: italic;
+  }
+
+
+

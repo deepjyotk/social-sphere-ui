@@ -1,0 +1,130 @@
+.product {
+  height: 150px;
+  object-fit: contain;
+}
+
+img {
+  border-radius: 60%;
+  width: 20%;
+  float: left;
+
+}
+.text{
+    color:  #e91e63!important;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.text_black{
+    color:black!important;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.text_grey{
+    color:goldenrod;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.button_Comments{
+    float: right;
+}
+/* .thumb_down{
+    padding-left: 25px;
+} */
+.dislike{
+    float: right;
+}
+.badge {
+    position: absolute;
+    top: 75%;
+    right: 85%;
+    font-size: 12px;
+    line-height: 13px;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    background-color: #ff0000;
+    border: 4px solid #ff0000;
+    color: #ffffff;
+    text-align: center;
+  }
+.count{
+    float : center;
+}
+
+
+
+  mat-list-item:hover mat-icon{
+    display: block;
+  }
+
+  .search{
+    text-align:right
+  }
+
+  .container {
+    font-size: 20px;
+    line-height: 18px;
+    height: 18px;
+    overflow: hidden;
+  }
+  .show {
+    overflow: visible;
+    height: auto;
+  }
+
+  .text_black_date{
+    float:right;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  img {
+    border-radius: 60%;
+    width: 20%;
+    float: left;
+
+  }
+
+.text{
+    color:  #e91e63!important;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.text_black{
+    color:black!important;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+}
+.text_grey{
+    color:goldenrod;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.button_Comments{
+    float: right;
+}
+.container {
+    font-size: 20px;
+    line-height: 18px;
+    height: 18px;
+    overflow: hidden;
+  }
+  .show {
+    overflow: visible;
+    height: auto;
+  }
+  .text_black_date{
+      float: right;
+      color: black;
+  }
+
+
+  .tweet-card{
+      margin-top: 15px;
+      margin-bottom: 15px;
+
+  }

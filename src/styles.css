@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/pink-bluegrey.css';
+.header-color{
+    background-color: orange;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.bg-pitchBlack{
+    background-color:black;
+}
+
+
+html, body { height: 100%; }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body{  
+    font-family: 'Times New Roman', Times, serif;
+    /* background - image: url("../../app/images/back2.jpg");  
+    background - size: 100 % ;  
+    background - size: cover;  */
+      background-color: #e91e63;
+}  
+
+
+
+
+body { margin: 0;  }

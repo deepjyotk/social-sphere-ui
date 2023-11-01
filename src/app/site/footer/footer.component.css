@@ -1,0 +1,11 @@
+p{
+    padding: 50px
+  }
+
+  
+.footer {
+    flex-shrink: 0;
+    flex-grow: 0;
+    background: #e91e63;
+    padding: 3px 15px;
+  }

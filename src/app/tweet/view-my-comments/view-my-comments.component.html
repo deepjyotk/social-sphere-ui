@@ -1,0 +1,37 @@
+
+<h1 mat-dialog-title>Comments</h1>
+
+
+<div class="container-fluid">
+  <ul>
+
+      <div class="row">
+
+        <div class="col-sm-12">
+
+          <ng-container *ngFor="let comment of this.commentList; let i =index">
+            <li>
+              <mat-card-content>
+                <h2>
+                  {{comment}}
+                </h2>
+              </mat-card-content>
+            </li>
+          </ng-container>
+        </div>
+
+
+    </div>
+
+
+  </ul>
+
+
+</div>
+
+
+
+
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</div>

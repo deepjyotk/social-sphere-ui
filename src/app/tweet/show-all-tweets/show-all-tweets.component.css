@@ -1,0 +1,133 @@
+/* body { 
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .basic-container {
+    padding: 30px;
+  }
+  
+  .version-info {
+    font-size: 8pt;
+    float: right;
+  } */
+
+/*   
+.home-card {
+    border-radius: 4px;
+    max-width: 600px;
+    max-height: 1000px;
+    margin-top: 100px;
+    padding: 0;
+
+    .mat-card-image {
+      margin: 0;
+      height: 100%;
+    }
+
+    .home-card-content {
+      display: flex;
+      justify-content: space-between;
+
+      & > * {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: auto;
+        max-width: 50%;
+
+        &:first-child {
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+        }
+
+        &:last-child {
+          flex-direction: column;
+          align-items: start;
+          padding: 8px;
+        }
+      }
+    }
+} */
+/* .content{
+    background: lightblue;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: flex;
+  } */
+  
+  .product{
+    min-width: 180px;
+    height: 280px;
+    text-align: center;
+    margin-bottom: 20px; /* same as fxLayoutGap for even distribution */
+  }
+  
+  .product {
+    height: 150px;
+    object-fit: contain;
+  }
+
+  img {
+    border-radius: 60%;
+    width: 20%;
+    float: left;
+    
+  }
+
+  .text{
+      color:black;
+      font-size: 20px;
+      font-family: 'Times New Roman', Times, serif;
+      
+  }
+ 
+  .text-right{
+   
+    float: right;
+    color:#ffd740;
+    font-size: 20px;
+      font-family: 'Times New Roman', Times, serif;
+      
+  }
+
+  p {
+    font-family: Lato;
+  }
+ 
+
+.text{
+    color:  #e91e63!important;
+}
+.text_black{
+    color:black!important;
+    float:right;
+}
+.text_grey{
+    color:goldenrod
+}
+.search{
+  text-align:right
+}
+
+.limitTextHeight {
+  height: 20px;
+  overflow: hidden;
+}
+.container {
+  font-size: 20px;
+  line-height: 18px;
+  height: 18px;
+  overflow: hidden;
+}
+.show {
+  overflow: visible;
+  height: auto;
+}
+  
+.view_post_button{
+  float: right;
+}
+  

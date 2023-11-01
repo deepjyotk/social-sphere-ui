@@ -1,0 +1,26 @@
+
+<mat-card >
+   <mat-card-content>
+       <div class='tweetHead'>
+        <h2 >Tweet &nbsp;&nbsp; : &nbsp;&nbsp; {{commentList[0].tweetPost}}</h2>
+    </div>
+        <div *ngFor="let list of commentList">
+            <h3><span class="userId">@{{list.userId}}</span> &nbsp;&nbsp;&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">{{list.comments}}</span></h3>
+            
+        </div>
+        <!-- <form [formGroup]="form" (ngSubmit)="addComment()">
+            <mat-form-field>
+                <input matInput  placeholder="add Comment" formControlName="comment">
+            </mat-form-field>  
+        </form> -->
+        
+        <mat-card-actions>
+            <button mat-raised-button class='button_add' (click)='alertBox()'>Add</button>
+        </mat-card-actions> 
+    </mat-card-content>
+</mat-card>
+
+
+
+
+

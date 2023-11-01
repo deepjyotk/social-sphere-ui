@@ -1,0 +1,41 @@
+<div class="search">
+    <mat-form-field class="icon">
+    <input type="text" matInput placeholder="search user" [(ngModel)]="searchText" >
+
+  </mat-form-field>
+  <button type="button" class="btn btn-primary" (click)="submitSearchRequest()">Search</button>
+
+  </div>
+
+  <div class="container-fluid">
+
+    <ng-container *ngFor="let tweet of this.tweetList; let i =index">
+      <div class="row tweet-card">
+
+
+        <div class="col-sm-12">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-subtitle>{{tweet.tweetTime}}</mat-card-subtitle>
+            </mat-card-header>
+
+            <mat-card-content>
+              <p>
+                {{tweet.tweetText}}
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <span>{{tweet.likeCount}}</span>
+              <button mat-button (click)="likeTweet(tweet.tweetId)">LIKE</button>
+              <button mat-button (click)="openCommentsPopUp(tweet)">View Comments</button>
+              <button mat-button (click)="addCommentPopUp(tweet)">Add Comment</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+    </ng-container>
+
+
+  </div>
+
+

@@ -1,0 +1,89 @@
+<mat-card >
+    <mat-card-title class="red-text">Register</mat-card-title>
+<mat-card-content>
+<form class="formwidth" [formGroup]="form" (ngSubmit)="onSubmit()" #myForm="ngForm">
+    <table class="fullwidth" cellspacing="0">
+        <tr>
+            <td>
+                <mat-form-field class="fullwidth">
+                    <input matInput placeholder="First Name" id="firstname" required  formControlName="firstName"[(ngModel)]="register.firstName" name="firstname">
+
+                    <mat-error *ngIf="hasError('firstName', 'required')">Please enter firstName</mat-error>
+                    <mat-error *ngIf="hasError('firstName', 'maxlength')">firstName should not be exceed 20 characters </mat-error>
+                </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field class="fullwidth">
+                    <input matInput placeholder="Last Name" id="lastname" formControlName="lastName" [(ngModel)]="register.lastName" name="lastname">
+                    <mat-error *ngIf="hasError('lastName', 'required')">Please enter lastName</mat-error>
+                </mat-form-field>
+            </td>
+        </tr>
+    </table>
+    <table class="fullwidth" cellspacing="0">
+        <tr>
+            <td>
+                <mat-form-field class="fullwidth">
+                <mat-select placeholder="Gender" [(ngModel)]="selectedValue" name="food"  required formControlName="gender">
+                    <mat-option *ngFor="let gender of genders" [value]="gender.id">
+                      {{gender.gender}}
+                    </mat-option>
+                </mat-select>
+
+                </mat-form-field>
+            </td>
+            <td>
+                 <mat-form-field class="fullwidth">
+                        <input matInput [matDatepicker]="dp" placeholder="Select your Date Of Birth" required [(ngModel)]="register.dob"
+                         formControlName="dob">
+                        <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+                        <mat-datepicker #dp></mat-datepicker>
+
+                      </mat-form-field>
+            </td>
+        </tr>
+    </table>
+    <p>
+        <mat-form-field class="fullwidth">
+            <input matInput placeholder="Email" id="address" type='Email' formControlName="emailId"[(ngModel)]="register.emailId" name="address" require (input)="checkUsername(form.get('emailId').value)"  />
+
+        </mat-form-field>
+    </p>
+    <table class="fullwidth" cellspacing="0">
+        <tr>
+            <td>
+                <mat-form-field class="fullwidth">
+                    <input matInput type='password' placeholder="Password" formControlName="password" id="city" [(ngModel)]="register.password"  required name="city">
+
+                    <mat-error *ngIf="hasError('password', 'required')">Please Enter password</mat-error>
+                </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field class="fullwidth">
+                    <input matInput type='password' placeholder="Confirm Password" id="state"  name="state" (keyup)="onConfirmPassword($event)" >
+                    <div class="text text-danger" *ngIf="passwordNotSame"><small>Passwords do not match</small></div>
+                </mat-form-field>
+            </td>
+        </tr>
+    </table>
+
+    <p>
+        <input #fileUpload
+       type="file" required
+       class="input_fileupload--hidden"
+       color="primary"
+       (change)="fileEvent($event)">
+
+    </p>
+    <div class="button">
+        <button type="submit" [disabled]="" color="primary" mat-button>Submit</button>
+    </div>
+    <p *ngIf="formValid" class="validText">Please enter all the mandatory fields</p>
+    <p *ngIf="Imgvalid" class="validText">please upload the image</p>
+    <!-- <div>form.valid= {{ form.valid }}</div>
+<div>form.invalid = {{ form.invalid }}</div>
+<div>form.status = {{ form.status }}</div>
+<div>form.disabled = {{ form.disabled }}</div> -->
+</form>
+</mat-card-content>
+</mat-card>
