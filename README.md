@@ -1,5 +1,3 @@
-Certainly! Here's a template for a README file for your Angular UI application for Social Sphere:
-
 # Social Sphere UI
 
 The Social Sphere UI is an Angular-based front-end application that provides an engaging user interface for the Social Sphere platform. This UI application seamlessly integrates with the Social Sphere Web API to offer a rich user experience.
